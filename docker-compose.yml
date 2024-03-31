@@ -6,9 +6,9 @@ services:
     #  - .:/app
     ports:
       - "8080:8080" # 必要に応じて使用するポートに合わせて変更してください
- # test:
- #   build: .
+  test:
+    build: .
     #volumes:
     #  - .:/app
- #   command: go test ./character/
+    command: go test ./character/
 
